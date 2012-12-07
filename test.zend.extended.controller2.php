@@ -1,5 +1,5 @@
 <?php
-class UserController extends Zend_Controller_Action
+class Controller2 extends Zend_Controller_Action
 {
     public function indexAction()
     {

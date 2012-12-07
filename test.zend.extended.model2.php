@@ -1,16 +1,16 @@
 <?php
 
-class Users extends Zend_Db_Table
+class Model2 extends Zend_Db_Table
 {
-    protected $_name = 'users';
+    protected $_name = 'model2';
 
-    public function getByPostId($postId)
+    public function getByPostId($id)
     {
-        $postId = intval($postId);
+        $id = intval($id);
 		
-        $row = $this->fetchAll('post_id = ' . $postId);
+        $row = $this->fetchAll('id = ' . $id);
         if (!$row) {
-            throw new Exception('Fail');
+            throw new Exception('fail');
         }
         return $row->toArray();
     }
