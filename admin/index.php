@@ -1,3 +1,0 @@
-<?php
-
-include("xcache.php");
